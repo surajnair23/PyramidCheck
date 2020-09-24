@@ -11,6 +11,7 @@ A word is a pyramid word if you can arrange the letters in increasing frequency,
 
 > "bandana" is not a pyramid word because you have 1 'b' and 1 'd'.
 
+Problem statement: https://fetch-hiring.s3.amazonaws.com/pyramid.html
 ## Assumptions
 
 > Basic validations are performed within the controller, another approach could split the validations into seperate Service for scalability options OR the input could be taken as a DTO(Data Transfer Object) where the Java class could utilize @Valid for the same purpose
@@ -29,7 +30,10 @@ A word is a pyramid word if you can arrange the letters in increasing frequency,
 ## Approach
 
 We count the occurrences of each character and sort them in ascending order
+
 If a string is pyramid, the occurence of characters will differ by 1
+
+JUnit test cases for empty, invalid and alpnumeric string
 
 ## Running the application locally
 
