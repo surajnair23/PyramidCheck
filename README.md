@@ -50,3 +50,5 @@ To ensure a clean build, also install the [Spring Tool Suite plugin](https://dow
   java -jar frassessment-0.0.1-SNAPSHOT.jar
   ```
 5) Once the application is running, open a web browser or any web api testing tool such as [Postman](https://www.postman.com/downloads/) and access(use GET method for Postman) via http://localhost:8081/assess?word=your_input
+
+## Thank you for your time and consideration towards this application
