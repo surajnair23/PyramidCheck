@@ -29,6 +29,8 @@ Problem statement: https://fetch-hiring.s3.amazonaws.com/pyramid.html
 
 ## Approach
 
+We will build a Spring Boot application for our web service
+
 We count the occurrences of each character and sort them in ascending order
 
 If a string is pyramid, the occurence of characters will differ by 1
@@ -41,14 +43,22 @@ Open the project in [Eclipse IDE](https://www.eclipse.org/downloads/)
 
 To ensure a clean build, also install the [Spring Tool Suite plugin](https://download.springsource.com/release/STS/3.9.8.RELEASE/dist/e4.11/spring-tool-suite-3.9.8.RELEASE-e4.11.0-win32-x86_64.zip) 
 
-1) Clone the repository to a local folder
-2) Open the project in [Eclipse IDE](https://www.eclipse.org/downloads/)
+1) Clone the repository to a local folder using 
+```
+git clone https://github.com/surajnair23/PyramidCheck.git
+```
+2) Open the project in [Eclipse IDE](https://www.eclipse.org/downloads/) or an IDE of your preference
 3) You may change the port for accessing web service at ..\FetchRewardsAssesment\src\main\resources changing the application properties (you may have to rebuild the application)
-4) Open class file FRAssessmentApplication.java and Run as Java Application                   OR
-   Navigate to ..\FetchRewardsAssesment\target\frassessment-0.0.1-SNAPSHOT.jar and run the following command in terminal/command prompt
+4) Open file FRAssessmentApplication.java and Run as Java Application                   OR
+   maven clean install to create jar and navigate to ..\FetchRewardsAssesment\target\frassessment-0.0.1-SNAPSHOT.jar and run the following command in terminal/command prompt
   ```
   java -jar frassessment-0.0.1-SNAPSHOT.jar
   ```
 5) Once the application is running, open a web browser or any web api testing tool such as [Postman](https://www.postman.com/downloads/) and access(use GET method for Postman) via http://localhost:8081/assess?word=your_input
+
+## Run Test cases
+
+1) Open the project in IDE
+2) Click on project and Run as JUnit test
 
 ## Thank you for your time and consideration towards this application
